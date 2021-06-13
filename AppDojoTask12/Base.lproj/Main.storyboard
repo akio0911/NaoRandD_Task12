@@ -17,9 +17,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="税抜金額" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="m7y-nE-ZZI">
-                                <rect key="frame" x="85" y="125" width="70" height="21"/>
+                                <rect key="frame" x="66" y="125" width="89" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="Sml-dR-l6p"/>
                                     <constraint firstAttribute="height" constant="21" id="vzq-ch-pqF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -47,17 +46,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="消費税率" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="nHf-8e-mQT">
-                                <rect key="frame" x="85" y="201" width="70" height="21"/>
+                                <rect key="frame" x="66" y="201" width="70" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="kLY-1h-iqr"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="q9m-dZ-1Ob"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="税込金額" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="jRs-y7-lIt">
-                                <rect key="frame" x="85" y="332" width="70" height="21"/>
+                                <rect key="frame" x="66" y="332" width="70" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="9pK-Ft-5b7"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="FEw-OW-Oy9"/>
@@ -95,10 +93,10 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2c-er-gAf">
-                                <rect key="frame" x="248" y="332" width="11" height="21"/>
+                                <rect key="frame" x="229" y="332" width="30" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="6K2-FJ-7Op"/>
-                                    <constraint firstAttribute="width" constant="11" id="i3p-8Q-2t0"/>
+                                    <constraint firstAttribute="width" constant="30" id="i3p-8Q-2t0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -121,6 +119,7 @@
                             <constraint firstItem="x0D-GP-xzm" firstAttribute="centerY" secondItem="jRs-y7-lIt" secondAttribute="centerY" id="0vB-Lr-8cK"/>
                             <constraint firstItem="nHf-8e-mQT" firstAttribute="leading" secondItem="m7y-nE-ZZI" secondAttribute="leading" id="1aJ-fu-zyH"/>
                             <constraint firstItem="jRs-y7-lIt" firstAttribute="top" secondItem="nHf-8e-mQT" secondAttribute="bottom" constant="110" id="2Fd-Q4-g3D"/>
+                            <constraint firstItem="icJ-1s-CV9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nHf-8e-mQT" secondAttribute="trailing" constant="8" symbolic="YES" id="AXm-ri-X27"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x0D-GP-xzm" secondAttribute="trailing" constant="81" id="Bxd-W4-alx"/>
                             <constraint firstItem="7my-qy-oX0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ExK-yN-2a0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Z9-h4-ld0" secondAttribute="trailing" constant="83" id="FHQ-6A-hCS"/>
@@ -142,6 +141,11 @@
                             <constraint firstItem="icJ-1s-CV9" firstAttribute="centerY" secondItem="nHf-8e-mQT" secondAttribute="centerY" id="uqy-8V-uk9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="includeTaxLabel" destination="m2c-er-gAf" id="Q0Q-1Z-wLv"/>
+                        <outlet property="noTaxLabel" destination="mNZ-wx-Wth" id="o6t-46-8e2"/>
+                        <outlet property="taxRateLabel" destination="icJ-1s-CV9" id="Ruf-DA-2hE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
