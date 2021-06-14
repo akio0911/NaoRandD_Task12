@@ -143,8 +143,8 @@
                     </view>
                     <connections>
                         <outlet property="includeTaxLabel" destination="m2c-er-gAf" id="Q0Q-1Z-wLv"/>
-                        <outlet property="noTaxLabel" destination="mNZ-wx-Wth" id="o6t-46-8e2"/>
-                        <outlet property="taxRateLabel" destination="icJ-1s-CV9" id="Ruf-DA-2hE"/>
+                        <outlet property="noTaxTextField" destination="mNZ-wx-Wth" id="pYm-A4-8cs"/>
+                        <outlet property="taxRateTextField" destination="icJ-1s-CV9" id="lWK-tf-WIt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
